@@ -1,0 +1,28 @@
+.navigation{
+    float:left;
+    font-family: Geneva,arial;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+
+.navigation ul{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+}
+
+.navigation li{
+    display: inline;
+}
+
+.navigation li a{
+    float:left;
+    border-right: 2px solid black;
+    padding: 0px 10px;
+    color: white;
+    text-decoration:none;
+}
+
+.navigation li a:hover{
+    background-color:blue;
+}

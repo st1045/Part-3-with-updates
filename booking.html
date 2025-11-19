@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Online Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      
+      color: white;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 70px;
+      margin: 40px 0;
+      text-decoration: underline;
+    }
+    form {
+      width: 50%;
+      margin: auto;
+      background: rgba(0,0,0,0.7);
+      padding: 40px;
+      border-radius: 10px;
+      position: center;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-size: 18px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 15px;
+    }
+    input[type=submit] {
+      background: #ff6600;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background: #ff3300;
+    }
+  </style>
+</head>
+<body bgcolor="grey">
+  <h1>Book a Delivery</h1>
+  <ul class="navigation">
+    <Li><A HREF="home.html" link="red">home</A></Li>
+    <li><A HREF="About.html" link="blue">About</A></li>
+    <Li><A HREF="contact us.html" link="blue">Contact us</A></Li>
+    <li><A HREF="services.html" link="blue">Services</A></li>
+    <li><A HREF="order here.html" link="blue">order here</A></li>
+    <li><A HREF="tracking.html" link="blue">Track your order</A></li>
+    <li><A HREF="booking.html" link="blue">Booking</A></li>
+    <li><A HREF="online services.html" link="blue">Online Services</A></li>
+</ul>
+
+<link rel="stylesheet" href="hom-nav.css">
+
+  <form onsubmit="confirmBooking(event)">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="pickup">Pickup Location</label>
+    <input type="text" id="pickup" required>
+
+    <label for="destination">Destination</label>
+    <input type="text" id="destination" required>
+
+    <label for="cargo">Cargo Type</label>
+    <select id="cargo">
+      <option>General Goods</option>
+      <option>Fragile Items</option>
+      <option>Perishables</option>
+      <option>Documents</option>
+    </select>
+
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" rows="5"></textarea>
+
+    <input type="submit" value="Submit Booking">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width", initial-scale="1.0">
+            <meta name="description" content="MGB Logistics">
+            <meta name="author" content="Abel Kalonji Mwanza">
+            <meta name="keywords" content="HTML, CSS,JavaScript">
+            <title>Track Your Shipment</title>
+  <script src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 70px;
+      text-decoration: underline;
+      margin-top: 50px;
+      color: white;
+    }
+    form {
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 40px;
+      border-radius: 12px;
+      margin-top: 30px;
+      position: left;
+    }
+    input[type=text] {
+      padding: 15px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type=submit] {
+      padding: 15px 30px;
+      background: #2d74df;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    input[type=submit]:hover {
+      background: #0084ff;
+    }
+  </style>
+</head>
+<body background="TRACK.jpg">
+
+  <h1>Track Your Shipment</h1>
+  <ul class="navigation">
+    <Li><A HREF="home.html" link="red">home</A></Li>
+    <li><A HREF="About.html" link="blue">About</A></li>
+    <Li><A HREF="contact us.html" link="blue">Contact us</A></Li>
+    <li><A HREF="services.html" link="blue">Services</A></li>
+    <li><A HREF="order here.html" link="blue">order here</A></li>
+    <li><A HREF="tracking.html" link="blue">Track your order</A></li>
+    <li><A HREF="booking.html" link="blue">Booking</A></li>
+    <li><A HREF="online services.html" link="blue">Online Services</A></li>
+</ul>
+  <form action="#">
+   <input id="trackingNumber" type="text" placeholder="Enter Tracking Number">
+<button onclick="trackShipment()">Track</button>
+<div id="result"></div>
+
+  </form>
+  <link rel="stylesheet" href="hom-nav.css">
+ 
+</body>
+
+</html>

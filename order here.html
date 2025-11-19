@@ -1,0 +1,188 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width", initial-scale="1.0">
+            <meta name="description" content="MGB Logistics">
+            <meta name="author" content="Abel Kalonji Mwanza">
+            <meta name="keywords" content="HTML, CSS,JavaScript">
+            <title>Contact US</title>
+  <style>
+h1{
+     color:white;
+     font-weight:italic;        
+     font-size: 100pt;
+     text-align:center;
+     text-decoration: underline;
+}
+.footer{
+         position: static;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          color:black;
+          text-align:center;
+          font-size:50px;
+          border-color:white;
+          font-family: 'Courier New', Courier, monospace;
+         background-color:  #04AA6D;
+         font-family: 'Times New Roman', Times, serif;
+         
+      }
+      ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-right: 5px;
+            border-style: solid;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            display: bold;
+            padding: 10px;
+            background-color:black;
+            border: 1px solid black ;
+            border-width: 2px;
+            border-color:black;
+            
+        } 
+               
+  a:link {
+  color: white;
+ 
+  text-decoration: none;
+}
+
+a:visited {
+  color:white;
+  
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+
+  text-decoration: none;
+}
+
+a:active {
+  color: aqua;
+  
+  text-decoration: underline;
+}
+
+ </style>
+</head>
+<body background="her.jpg">
+<h1>Order here</h1>
+
+<BR>
+
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Leo kalonji">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Danny@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Parkway Gardens 64th street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Chicago">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="OTF">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="2198">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="leo kalonji">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="3097566354675">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2011">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="644">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">R100</span></p>
+      <p><a href="#">Product 2</a> <span class="price">R500</span></p>
+      <p><a href="#">Product 3</a> <span class="price">R1000</span></p>
+      <p><a href="#">Product 4</a> <span class="price">R2000</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>R3 600</b></span></p>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="order.css">
+
+<div align="center" class="footer">
+<ul class="navigation">
+  <A HREF="home.html" link="blue">home</A>
+  <A HREF="About.html" link="blue">About</A>
+  <A HREF="contact us.html" link="blue">Contact us</A>
+  <A HREF="services.html" link="blue">Services</A>
+  <A HREF="order here.html" link="blue">order here</A>
+  <A HREF="tracking.html" link="blue">Track your order</A></li>
+  <A HREF="booking.html" link="blue">Booking</A></li>
+  <A HREF="online services.html" link="blue">Online Services</A></li>
+  
+</ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
